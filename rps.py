@@ -22,10 +22,13 @@ def compare(choice1,choice2):
             print("something wrong")
 
 rounds = int(raw_input("enter number of rounds: "))
+player1_name = raw_input("Enter Player 1 name: ")
+player2_name = raw_input("Enter Player 2 name: ")
 counter = 0
 while counter != rounds:
     choice1 = choice()
     choice2 = choice()
     compare(choice1, choice2)
     counter += 1
+print("{} and {} thanks for playing".format(player1_name, player2_name))
 
